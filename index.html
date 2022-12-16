@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="full-screen-container">
+      <div class="calculator-display">
+        <p class="display"></p>
+      </div>
+      <div class="calculator-row">
+        <button id="reset" onclick="reset()">AC</button>
+        <button id="imp" onclick="neg()">+/-</button>
+        <button id="imp">%</button>
+        <button class="operator">&#xf7;</button>
+      </div>
+      <div class="calculator-row row-2">
+        <button class="operand">7</button>
+        <button class="operand">8</button>
+        <button class="operand">9</button>
+        <button class="operator">&#xd7;</button>
+      </div>
+      <div class="calculator-row row-3">
+        <button class="operand">4</button>
+        <button class="operand">5</button>
+        <button class="operand">6</button>
+        <button class="operator">&#x2212;</button>
+      </div>
+      <div class="calculator-row row-4">
+        <button class="operand">1</button>
+        <button class="operand">2</button>
+        <button class="operand">3</button>
+        <button class="operator">&#x2b;</button>
+      </div>
+      <div class="calculator-row row-5">
+        <button id="zero">
+          <p class="operand" id="val">0</p>
+        </button>
+        <button class="operand">.</button>
+        <button class="operator">=</button>
+      </div>
+    </div>
+    <script src="app/script.js"></script>
+  </body>
+</html>

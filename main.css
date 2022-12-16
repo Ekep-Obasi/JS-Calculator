@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url("frame.png");
+  background-size: cover;
+  background-position: center; */
+  height: 100vh;
+}
+.calculator-display{
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+.calculator-display p{
+  color: white;
+  font-size: 3rem ;
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+}
+.full-screen-container{
+  background-color: black;
+  border-radius: 15px;
+  padding: 12px;
+  width: fit-content;
+}
+.calculator-row{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;  
+}
+button{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.operand:hover{
+  background-color: #a5a5a5 ;
+  cursor: pointer;
+}
+.operand{
+  background: #333333;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.operator{
+  background-color: #ff9f06;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.operator:hover{
+  background-color: #fff;
+  transition: 1s;
+  color:#ff9f06;
+  cursor: pointer;
+}
+.row-1{
+  margin-top: 0;
+}
+#zero{
+  flex: 2;
+  position: relative;
+  background-color: #333333;
+}
+#zero:hover{
+  background-color: #a5a5a5;
+}
+#imp{
+  background-color: #a5a5a5;
+  font-size: 2rem;
+}
+#imp:hover{
+  background-color: #e2dede;
+}
+#val{
+  position: absolute;
+  background-color: inherit;
+  top: -10px;
+  /* transform: translateX(30px); */
+  left: 30px;
+}
